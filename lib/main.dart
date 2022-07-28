@@ -1,3 +1,4 @@
+import 'package:boiler_plate/routes/app_pages.dart';
 import 'package:boiler_plate/routes/app_routes.dart';
 import 'package:boiler_plate/utils/utils.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.fade,
       smartManagement: SmartManagement.keepFactory,
       initialRoute: AppRoutes.splash,
-      getPages: [],
+      getPages: AppPages.appPages,
       theme: ThemeData(
         fontFamily: 'NotoSansKr',
         primaryColor: Colors.white,
